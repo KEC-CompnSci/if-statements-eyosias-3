@@ -9,7 +9,9 @@ all_assignments_completed = True
 # TASK 1: Calculate the final score as the average of test_score and exam_score
 # ===== YOUR CODE HERE =====
 
-final_score = None  # Replace None with the calculation
+almost_final_score = test_score + exam_score
+final_score = almost_final_score / 2
+  # Replace None with the calculation
 
 # ===== END YOUR CODE =====
 
@@ -17,7 +19,7 @@ final_score = None  # Replace None with the calculation
 # A student passes if their final_score is 60 or higher
 # ===== YOUR CODE HERE =====
 
-passed = None  # Set to True or False using an if statement
+passed = final_score >= 50  # Set to True or False using an if statement
 
 # ===== END YOUR CODE =====
 
@@ -29,7 +31,7 @@ passed = None  # Set to True or False using an if statement
 # Score below 60: "F"
 # ===== YOUR CODE HERE =====
 
-letter_grade = ""  # Set the letter grade using if-elif-else
+letter_grade = "B"  # Set the letter grade using if-elif-else
 
 # ===== END YOUR CODE =====
 
@@ -39,7 +41,13 @@ letter_grade = ""  # Set the letter grade using if-elif-else
 # - All assignments completed
 # ===== YOUR CODE HERE =====
 
-honor_roll = None  # Set to True or False using an if statement
+honor_roll = False
+if final_score >= 90:
+    print("False")
+
+if final_score <= 90:
+    print("True")
+# Set to True or False using an if statement
 
 # ===== END YOUR CODE =====
 
@@ -51,8 +59,12 @@ honor_roll = None  # Set to True or False using an if statement
 #   - Have a letter grade of "B" AND have completed all assignments
 # ===== YOUR CODE HERE =====
 
-can_take_advanced = None  # Set to True or False using if statements with AND/OR
+can_take_advanced = True   # Set to True or False using if statements with AND/OR
+if final_score >= 60:
+    print("True")
 
+if final_score <= 60:
+    print("False")
 # ===== END YOUR CODE =====
 
 # This prints the results (do not modify)
