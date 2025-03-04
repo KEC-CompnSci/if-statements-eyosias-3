@@ -19,8 +19,13 @@ final_score = almost_final_score / 2
 # A student passes if their final_score is 60 or higher
 # ===== YOUR CODE HERE =====
 
-passed = final_score >= 50  # Set to True or False using an if statement
+# Set to True or False using an if statement
 
+if final_score >= 50:
+    passed = True
+
+if final_score < 50:
+    passed: False
 # ===== END YOUR CODE =====
 
 # TASK 3: Assign a letter grade based on the final_score
@@ -32,6 +37,21 @@ passed = final_score >= 50  # Set to True or False using an if statement
 # ===== YOUR CODE HERE =====
 
 letter_grade = "B"  # Set the letter grade using if-elif-else
+if final_score >= 90:
+    letter_grade = "A"
+
+elif final_score >= 80: 
+    letter_grade = "B"
+
+elif final_score >= 70: 
+    letter_grade = "C"
+
+elif final_score >= 60: 
+    letter_grade = "D"
+
+elif final_score < 60:
+    letter_grade = "F"
+
 
 # ===== END YOUR CODE =====
 
@@ -43,10 +63,10 @@ letter_grade = "B"  # Set the letter grade using if-elif-else
 
 honor_roll = False
 if final_score >= 90:
-    print("False")
+    honor_roll = True
 
-if final_score <= 90:
-    print("True")
+if final_score < 90:
+    honor_roll = False
 # Set to True or False using an if statement
 
 # ===== END YOUR CODE =====
@@ -63,7 +83,7 @@ can_take_advanced = True   # Set to True or False using if statements with AND/O
 if final_score >= 60:
     print("True")
 
-if final_score <= 60:
+if final_score < 60:
     print("False")
 # ===== END YOUR CODE =====
 
